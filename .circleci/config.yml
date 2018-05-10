@@ -20,3 +20,5 @@ jobs:
     working_directory: /go/src/github.com/catay/go-citest
     steps:
       - checkout
+      - run: dep ensure
+      - run: go build
