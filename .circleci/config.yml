@@ -20,5 +20,9 @@ jobs:
     working_directory: /go/src/github.com/catay/go-citest
     steps:
       - checkout
+      - run: 
+          name: install dep
+          command: |
+            curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
       - run: dep ensure
       - run: go build
