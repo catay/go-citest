@@ -24,5 +24,5 @@ jobs:
           name: install dep
           command: |
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-      - run: dep ensure
-      - run: go build
+      - run: dep ensure -v
+      - run: go build -v
