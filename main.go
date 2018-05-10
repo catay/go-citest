@@ -8,6 +8,7 @@ import (
 
 func main() {
 
+	// bla
 	fmt.Println("This is a test to make circleci work")
 
 	f, err := os.Open("/tmp/bla.txt")
