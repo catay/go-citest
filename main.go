@@ -18,4 +18,6 @@ func main() {
 		f.Close()
 	}
 
+	f
+
 }
